@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 const styles = StyleSheet.create({
     container: {
@@ -12,7 +13,8 @@ const styles = StyleSheet.create({
 function App() {
     return (
         <View style={styles.container}>
-            <Text>APP</Text>
+            <Icon name="reorder" size={25} />
+            <Text>APP </Text>
         </View>
     );
 }
