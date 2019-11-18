@@ -27,18 +27,12 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginTop: 40,
     },
-    containerSair: {
-        flex: 1,
-        alignItems: 'flex-end',
-        justifyContent: 'center',
-        marginVertical: 20,
-        marginRight: 10,
-    },
     circle: {
         height: 40,
         width: 40,
         borderRadius: 20,
-        borderWidth: 5,
+        borderWidth: 1,
+        marginBottom: 20,
         justifyContent: 'center',
         alignItems: 'center',
         borderColor: `${globalStyles.verdeClaro}`,
@@ -53,8 +47,6 @@ const CustomDrawerContentComponent = props => (
         >
             <View style={styles.containerImage}>
                 <Image source={logo} />
-            </View>
-            <View style={styles.containerSair}>
                 <TouchableOpacity
                     style={styles.circle}
                     onPress={() => props.navigation.navigate('Welcome')}
@@ -66,6 +58,7 @@ const CustomDrawerContentComponent = props => (
                     />
                 </TouchableOpacity>
             </View>
+
             <DrawerItems {...props} />
         </SafeAreaView>
     </ScrollView>
